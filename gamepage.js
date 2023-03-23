@@ -1,5 +1,9 @@
 // random value generated
  var y = Math.floor(Math.random()* 10 + 1);
+var guess =1;
+ function submit()
+{
+
 
  var x = document.getElementById("guessField").value;
 // counting the number of guesses
@@ -20,5 +24,10 @@ else
    guess++;
    alert("OOPS SORRY!! TRY A GREATER NUMBER");
 }
-  
+}
 // function for number guessed by user     
+function playAgain()
+{
+    y = Math.floor(Math.random()* 10 + 1); 
+    document.getElementById("guessField").value = "";
+}
